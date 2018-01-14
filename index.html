@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>liriBot</title>
+
+  <!-- Bootswatch Styling for Improving the Aesthetics -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+  <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/popup.css">
+
+  <!-- jQuery JS -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+
+  <!-- Style to fix the issue of text extending past panel length -->
+  <style>
+    body {
+        background-image: url("./assets/straws.png");
+        background-repeat: repeat;
+        background-color: #cccccc;
+        font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+        font-size: 16px;
+        color: black;
+    }
+    .panel-body a {
+      word-break: break-all;
+    }
+    img {
+      width: 100px;
+      padding: 0px 5px 0px 0px;
+      float: left;
+    }
+  </style>
+</head>
+<body>
+  <!-- Main Bootstrap Search -->
+  <div class="container">
+    <!-- Jumbotron for Title -->
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="text-center">
+          <strong>Language Interpretation and Recognition Interface</strong>
+        </h3>
+      </div>
+    </div>
+    <!-- Footer Region -->
+    <div class="row">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">
+          <div style="font-size: 8px">© Copyright 2017 - Bob Imel II</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pop up window for Detailed Information -->
+  <div class="popup" data-popup="zPopup">
+    <div class="popup-inner">
+         <a class="popup-close" data-popup-close="zPopup" href="#">X</a>
+    </div>
+  </div>
+
+</body>
+</html>
