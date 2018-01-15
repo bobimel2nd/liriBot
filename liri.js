@@ -53,10 +53,9 @@ function DoCommands() {
 	}
 }
 
-var max;
 function twitterTweets() {
 	readyForNextCommand = false;
-	max = parseInt(args[3]);
+	let max = parseInt(args[3]);
 	logText("My Twitter Tweets (" + max + " max)");
 	var Twitter = require('twitter');
 	var client = new Twitter({
@@ -130,27 +129,24 @@ function responseOMDB() {
 	});	
 }
 
-
-var dataJSON;
 function fsDoWhatItSays() {
 	logText('do-what-it-says in ' + args[3]);
 	var fs = require('fs');
-	dataJSON = JSON.parse(fs.readFileSync(args[3]).toString());
 	readyForNextCommand = true;
-	doNextCommand();
+	doNextCommand(JSON.parse(fs.readFileSync(args[3]).toString()));
 }
 
-var waitForComplete;
-function doNextCommand() {
+function doNextCommand(data) {
+	let dataJSON = data;
 	if (dataJSON.length > 0) {
 		args[2] = dataJSON[0].Action;
 		args[3] = dataJSON[0].Value;
 		dataJSON.splice(0, 1);
-		waitForComplete = setInterval(function () {
+		let waitForComplete = setInterval(function () {
 			if(readyForNextCommand) {
 				clearInterval(waitForComplete);
 				DoCommands();
-				doNextCommand();
+				doNextCommand(dataJSON);
 			}
 		}, 100);
 	}

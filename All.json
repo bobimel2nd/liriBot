@@ -1,4 +1,8 @@
 [	{"Action":"my-tweets",			"Value":"10"},
 	{"Action":"spotify-this-song",	"Value":"Rapid Roy"},
+	{"Action":"spotify-this-song",	"Value":"Pinball Wizard"},
+	{"Action":"spotify-this-song",	"Value":"You're so vain"},
 	{"Action":"movie-this",			"Value":"Circle of Iron"},
+	{"Action":"movie-this",			"Value":"2001"},
+	{"Action":"movie-this",			"Value":"2010"},
 	{"Action":"do-what-it-says",	"Value":"Random.txt"}		]
