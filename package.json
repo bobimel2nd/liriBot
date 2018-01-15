@@ -1,0 +1,27 @@
+{
+  "name": "liribot",
+  "version": "1.0.0",
+  "description": "Language Interpretation and Recognition Interface",
+  "main": "keys.js",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "node-spotify-api": "^1.0.7",
+    "response": "^0.18.0",
+    "time-stamp": "^2.0.0",
+    "twitter": "^1.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bobimel2nd/liriBot.git"
+  },
+  "author": "Bob Imel II",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bobimel2nd/liriBot/issues"
+  },
+  "homepage": "https://github.com/bobimel2nd/liriBot#readme"
+}
