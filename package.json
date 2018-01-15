@@ -4,11 +4,14 @@
   "description": "Language Interpretation and Recognition Interface",
   "main": "keys.js",
   "dependencies": {
+    "date-time": "^2.1.0",
     "dotenv": "^4.0.0",
     "node-spotify-api": "^1.0.7",
     "response": "^0.18.0",
+    "stream-browserify": "^2.0.1",
     "time-stamp": "^2.0.0",
-    "twitter": "^1.7.1"
+    "twitter": "^1.7.1",
+    "wait.for": "^0.6.6"
   },
   "devDependencies": {},
   "scripts": {
