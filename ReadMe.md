@@ -1,16 +1,17 @@
-**LIRI** is a ancronym for **L**anguage **I**nterpretation and **R**ecognition **I**nterface
+# **LIRI**
+### is a ancronym for **L**anguage **I**nterpretation and **R**ecognition **I**nterface
 This is a node.js application that runs commands interfaces with multiple APIs
 
-Command line is as follows:
-**node liri _command_ _parameter_**
+### Command line is as follows:
+## **node liri _command_ _parameter_**
 	where _command_ is one of the following:
-		* my-tweets
+####		* my-tweets
 				_parameter_ specifies number of tweets to return (defaults to '20')
-		* spotify-this-song
+####		* spotify-this-song
 				_parameter_ specifies the song to search for (defaults to 'Rapid Roy' by Jim Croce)
-		* movie-this
+####		* movie-this
 				_parameter_ specifies the movie to lookup (defaults to '2001: A Space Odyssey')
-		* do-what-it-says
+####		* do-what-it-says
 				_parameter_ specifies a command files containing additional Command/Parameter object pairs
 					(defaults to 'random.txt')
 
