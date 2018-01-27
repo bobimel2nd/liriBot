@@ -2,16 +2,16 @@
 This is a node.js application that runs commands interfaces with multiple APIs
 
 Command line is as follows:
-**node liri "<command>" "<parameter>"**
-	where "<command>" is one of the following:
+**node liri _command_ _parameter_**
+	where _command_ is one of the following:
 		* my-tweets
-			"<parameter>" specifies number of tweets to return (defaults to '20')
+				_parameter_ specifies number of tweets to return (defaults to '20')
 		* spotify-this-song
-			"<parameter>" specifies the song to search for (defaults to 'Rapid Roy' by Jim Croce)
+				_parameter_ specifies the song to search for (defaults to 'Rapid Roy' by Jim Croce)
 		* movie-this
-			"<parameter>" specifies the movie to lookup (defaults to '2001: A Space Odyssey')
+				_parameter_ specifies the movie to lookup (defaults to '2001: A Space Odyssey')
 		* do-what-it-says
-			"<parameter>" specifies a command files containing additional Command/Parameter object pairs
+				_parameter_ specifies a command files containing additional Command/Parameter object pairs
 					(defaults to 'random.txt')
 
 _Notes:_
