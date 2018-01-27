@@ -1,26 +1,26 @@
 # **LIRI**
-### is a ancronym for **L**anguage **I**nterpretation and **R**ecognition **I**nterface
-This is a node.js application that runs commands interfaces with multiple APIs
+is a ancronym for **L**anguage **I**nterpretation and **R**ecognition **I**nterface.
+It is a node.js application that runs commands interfaces with multiple APIs.
 
 ### Command line is as follows:
 ## **node liri _command_ _parameter_**
-	where _command_ is one of the following:
+	where *command* is one of the following:
 ####		* my-tweets
-				_parameter_ specifies number of tweets to return (defaults to '20')
+				*parameter* specifies number of tweets to return (defaults to '20')
 ####		* spotify-this-song
-				_parameter_ specifies the song to search for (defaults to 'Rapid Roy' by Jim Croce)
+				*parameter* specifies the song to search for (defaults to 'Rapid Roy' by Jim Croce)
 ####		* movie-this
-				_parameter_ specifies the movie to lookup (defaults to '2001: A Space Odyssey')
+				*parameter* specifies the movie to lookup (defaults to '2001: A Space Odyssey')
 ####		* do-what-it-says
-				_parameter_ specifies a command files containing additional Command/Parameter object pairs
+				*parameter* specifies a command files containing additional Command/Parameter object pairs
 					(defaults to 'random.txt')
 
-_Notes:_
+### _Notes:_
 
 Command files must be structured as follows:
-[	{"Action":"spotify-this-song",	"Value":"Rapid Roy"},
-	{"Action":"movie-this",			"Value":"Circle of Iron"},
-	{"Action":"do-what-it-says",	"Value":"Random.txt"},
-	{"Action":"my-tweets",			"Value":"10"}		]
+#### [	{"Action":"spotify-this-song",	"Value":"Rapid Roy"},
+#### 	{"Action":"movie-this",			"Value":"Circle of Iron"},
+#### 	{"Action":"do-what-it-says",	"Value":"Random.txt"},
+#### 	{"Action":"my-tweets",			"Value":"10"}		]
 
 To prevent infinite looping, do-what-it-says commands will not run command files that have already been executed in current process loop.
