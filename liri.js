@@ -14,24 +14,26 @@ var subJSONs = [];
 DoCommands(args[2], args[3]);
 
 function DoCommands(cmd, val) {
+	if (cmd === undefined) cmd = "";
+	if (val === undefined) val = "";
 	cmd = cmd.toLowerCase();
 	val = val.toLowerCase();
 	logText(dashes);
 	switch (cmd) {
 		case 'my-tweets':
-			if (val === undefined) val=20;
+			if (val === "") val=20;
 			twitterTweets(val);
 			break;
 		case 'spotify-this-song':
-			if (val === undefined) val="rapid roy";
+			if (val === "") val="rapid roy";
 			spotifySong(val);
 			break;
 		case 'movie-this':
-			if (val === undefined) val="2001: a space odyssey";
+			if (val === "") val="2001: a space odyssey";
 			responseOMDB(val);
 			break;
 		case 'do-what-it-says':
-			if (val === undefined) val="random.txt";
+			if (val === "") val="random.txt";
 			if (subJSONs.indexOf(val) !== -1) {
 				logText("Canceled recursive call do-what-it-says " + val)
 				break;
